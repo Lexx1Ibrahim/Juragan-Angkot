@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Penumpang Angkot</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Masukkan Nama penumpang</h1>
+        </div>
+
+        <div class="form">
+            <input id="namaPenumpang" type="text" placeholder="Masukkan nama penumpang" class="input-field">
+            <input id="tarifPenumpang" type="number" placeholder="Masukkan tarif penumpang" min="0" class="input-field">
+            <button id="btnTambah" class="btn tambah">Tambah Penumpang</button>
+            <button id="btnHapus" class="btn hapus">Keluarkan Penumpang</button>
+        </div>
+<br><br>
+        <h2>Daftar Penumpang</h2>
+        <ul id="listPenumpang" class="penumpang-list">
+            <!-- Daftar penumpang akan muncul di sini -->
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

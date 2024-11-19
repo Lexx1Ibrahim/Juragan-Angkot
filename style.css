@@ -1,0 +1,129 @@
+/* Reset dan default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container utama */
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Header */
+.header h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Form Input */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Tombol */
+.btn {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    width: 100%;
+}
+
+.tambah {
+    background-color: #4CAF50;
+}
+
+.tambah:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.hapus {
+    background-color: #FF5252;
+}
+
+.hapus:hover {
+    background-color: #ff2a2a;
+    transform: translateY(-2px);
+}
+
+/* Daftar Penumpang */
+.penumpang-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.penumpang-list li {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.penumpang-list li button {
+    background-color: #FF5252;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.penumpang-list li button:hover {
+    background-color: #ff2a2a;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form {
+        gap: 10px;
+    }
+}
